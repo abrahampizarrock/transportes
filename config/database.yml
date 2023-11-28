@@ -22,4 +22,10 @@ test:
 
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+  adapter: postgresql
+  encoding: unicode
+  database: transporte
+  username: postgres
+  password: 123456
+  host: localhost
+
